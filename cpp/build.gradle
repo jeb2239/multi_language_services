@@ -1,0 +1,12 @@
+
+task genCmake(type:Exec) {
+    workingDir './'
+    executable = "cmake"
+    args "."
+    
+}
+
+
+
+
+

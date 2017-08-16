@@ -1,0 +1,32 @@
+
+buildscript {
+    ext.kotlin_version = '1.1.4'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+repositories{
+    mavenCentral()
+}
+
+
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'kotlin'
+
+
+dependencies {
+    
+        // https://mvnrepository.com/artifact/org.scala-lang/scala-library
+        compile group: 'org.scala-lang', name: 'scala-library', version: '2.11.7'
+        // https://mvnrepository.com/artifact/org.scalatest/scalatest_2.11
+        testCompile group: 'org.scalatest', name: 'scalatest_2.11', version: '3.0.3'
+
+    
+}
